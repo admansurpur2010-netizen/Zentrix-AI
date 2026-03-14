@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>All AI Tools</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>All AI Tools</h1>
+
+<div class="menu">
+<button onclick="showTool('chat')">AI Chat</button>
+<button onclick="showTool('image')">Image Generator</button>
+<button onclick="showTool('story')">Story Generator</button>
+<button onclick="showTool('code')">Code Generator</button>
+<button onclick="showTool('translate')">Translator</button>
+</div>
+
+<div id="chat" class="tool">
+<h2>AI Chatbot</h2>
+<div id="chatbox"></div>
+<input id="chatInput" placeholder="Ask anything">
+<button onclick="chat()">Send</button>
+</div>
+
+<div id="image" class="tool">
+<h2>Image Generator</h2>
+<input id="imagePrompt" placeholder="Describe image">
+<button onclick="image()">Generate</button>
+<br><br>
+<img id="imgResult" width="300">
+</div>
+
+<div id="story" class="tool">
+<h2>Story Generator</h2>
+<input id="storyPrompt" placeholder="Story idea">
+<button onclick="story()">Generate</button>
+<div id="storyResult"></div>
+</div>
+
+<div id="code" class="tool">
+<h2>Code Generator</h2>
+<input id="codePrompt" placeholder="Describe code">
+<button onclick="code()">Generate</button>
+<pre id="codeResult"></pre>
+</div>
+
+<div id="translate" class="tool">
+<h2>Translator</h2>
+<input id="translateText" placeholder="Enter text">
+<button onclick="translate()">Translate</button>
+<div id="translateResult"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+  </html>
